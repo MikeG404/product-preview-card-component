@@ -1,6 +1,79 @@
-.nested {
-    color: aqua;
-    strong {
-        color: red;
-    }
+:root {
+  --black: #1C232B;
+  --grey: #6C7289;
+  --cream: #F2EAE2;
+  --white: #FFFFFF;
+
+  --green-500: #3D8168;
+  --green-700: #1A4032;
+
+  --ff-serif: "Fraunces", Georgia, serif;
+  --ff-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-100: 1;
+  --line-height-110: 1.1;
+  --line-height-120: 1.2;
+  --line-height-160: 1.6;
+
+  --letter-spacing-0: 0;
+  --letter-spacing-5: 0.5rem;
+}
+
+
+html { 
+    font-size: 10px; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+}
+
+
+.text-preset-1 {
+  font-family: var(--ff-serif);
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-100);
+  letter-spacing: var(--letter-spacing-0);
+}
+
+.text-preset-2 {
+  font-family: var(--ff-sans);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-110);
+  letter-spacing: var(--letter-spacing-0);
+}
+
+.text-preset-3 {
+  font-family: var(--ff-sans);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-160);
+  letter-spacing: var(--letter-spacing-0);
+}
+
+.text-preset-4 {
+  font-family: var(--ff-sans);
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-120);
+  letter-spacing: var(--letter-spacing-5);
+  text-transform: uppercase;
+}
+
+.text-preset-5 {
+  font-family: var(--ff-sans);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-120);
+  letter-spacing: var(--letter-spacing-0);
 }
