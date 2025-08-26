@@ -7,8 +7,8 @@
   --green-500: #3D8168;
   --green-700: #1A4032;
 
-  --ff-serif: "Fraunces", Georgia, serif;
-  --ff-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --ff-serif: "Fraunces", Georgia;
+  --ff-sans: "Montserrat", system-ui;
 
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
@@ -33,7 +33,13 @@ html {
 }
 
 body {
-  margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--cream);
 }
 
 
@@ -76,4 +82,33 @@ body {
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-120);
   letter-spacing: var(--letter-spacing-0);
+}
+
+.button {
+    display: flex;
+    gap: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    background-color: var(--green-500);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.card {
+    width: 35rem;
+    max-width: 60rem;
+
+    border-radius: 0.8rem;
+
+    picture {
+        img {
+            width: 100%;
+            border-top-right-radius: 0.8rem;
+            border-top-left-radius: 0.8rem;
+        }
+    }
 }

@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="style.scss">
   </head>
   <body>
-    <h1 class="nested">PARCEL SASS <strong>TEST</strong></h1>
+    <div class="card bg-white">
+      <picture>
+        <source srcset="./images/image-product-mobile.jpg" type="image/jpg">
+        <source srcset="./images/image-product-desktop.jpg" type="image/jpg">
+        <img src="./images/image-product-mobile.jpg" alt="Chanel perfume product">
+      </picture>
+      <section class="content">
+        <h2>Perfume</h2>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <p class="price">
+          <data value="149.99">$149.99</data>
+          <s><data value="169.99">$169.99</data></s>
+        </p>
+        <button class="button text-preset-2">
+          <img src="./images/icon-cart.svg" alt="Cart Icon">
+          Add to cart
+        </button>
+      </section>
+    </div>
   </body>
 </html>
