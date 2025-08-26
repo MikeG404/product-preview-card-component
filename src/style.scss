@@ -98,6 +98,11 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 0.8rem;
+
+    img {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
 }
 
 .bg-white {
@@ -106,8 +111,7 @@ body {
 
 .card {
     width: 35rem;
-    max-width: 60rem;
-     border-radius: 0.8rem;
+    border-radius: 0.8rem;
 
     picture {
         img {
@@ -124,10 +128,40 @@ body {
         padding: 3.2rem;
 
         .price {
-            data:first-child {
+            display: flex;
+            align-items: center;
+            > data:first-child {
                 color: var(--green-500);
                 margin-right: 1.6rem;
             }
+            s {
+                > data {
+                  color: var(--grey);
+              }
+          }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 60rem;
+        display: flex;
+        flex-direction: row;
+
+        picture {
+            display: flex;
+            flex: 1;
+        img {
+            border-top-right-radius: 0rem;
+            border-bottom-left-radius: .8rem;
+        }
+    }
+
+        .content {
+            flex: 1;
+            gap: 2.4rem;
+            padding: 4rem;
         }
     }
 }
